@@ -3,59 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi CV</title>
+  <meta name="description" content="Michelle Quintanilla, desarrolladora de software en Santa Ana, El Salvador. Sistemas de ventas, inventario, citas y catálogos para tu negocio.">
+  <title>Michelle Quintanilla | Desarrolladora de Software</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <header>
-    <h1>Michelle Quintanilla</h1>
-    <p>Desarrolladora Fullstack | Santa ana, El Salvador</p>
-    <p>LinkedIn: https://www.linkedin.com/in/michelle-quintanilla/</p>
-    <p>Github: https://github.com/michi5544 </p>
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="foto" src="imagenes/perfil.jpg" alt="Foto de Michelle Quintanilla">
+      <div>
+        <h1>Michelle Quintanilla</h1>
+        <p class="rol">Desarrolladora de Software · Santa Ana, El Salvador</p>
+        <p class="lema">Creo sistemas que ordenan tu negocio y te ahorran tiempo.</p>
+        <p class="contacto">
+          <a class="btn" href="mailto:michellequinta56@gmail.com">Escríbeme</a>
+          <a class="btn btn-claro" href="https://www.linkedin.com/in/michelle-quintanilla/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-claro" href="https://github.com/michi5544" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
   </header>
 
-  <section id="perfil">
-    <h2>Perfil</h2>
-    <p>Soy una desarrolladora fullstack con experiencia en tecnologias como:
-      <ul>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>SQL Server</li>
-        <li>MySQL</li>
-      </ul>
-      Me apasiona crear sistemas robustos y documentar procesos para equipos colaborativos.
-    </p>
-  </section>
+  <main>
+    <section id="perfil">
+      <h2>Sobre mí</h2>
+      <p>
+        Tengo más de 3 años de experiencia creando sistemas que ayudan a negocios e instituciones a
+        trabajar de forma más ordenada y rápida. Convierto procesos que hoy se llevan en cuadernos o
+        Excel en herramientas fáciles de usar, y dejo todo documentado para que puedan seguir creciendo.
+      </p>
+    </section>
 
-  <section id="educacion">
-    <h2>Educación</h2>
-    <ul>
-      <li>Técnico en Ingenieria de Sistemas Informaticos - ITCA-FEPADE  |  2020/01/31 - 2021/12/31</li>
-    </ul>
-  </section>
- <section id="experiencia">
-    <h2>Experiencia</h2>
-    <ul>
-      <li><strong>Proyecto Fullstack:</strong> Desarrollo de sistema de gestión de ventas con React, Node.js y MySql.  2025-12-01 - Actualmente</li>
-      <br>
-      <li><strong>Alcaldia de Santa Ana | Programador:</strong> Desarrollo de sistemas de gestión para la alcaldía. 2022-01-13 - 2024-12-31</li>
-    </ul>
-  </section>
+    <section id="servicios">
+      <h2>Qué puedo hacer por tu negocio</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <span class="icono">💰</span>
+          <h3>Ventas y caja</h3>
+          <p>Cobra rápido y cierra tu caja sin errores de cuentas.</p>
+        </div>
+        <div class="card">
+          <span class="icono">📦</span>
+          <h3>Inventario</h3>
+          <p>Sabe qué tienes y cuándo reponerlo.</p>
+        </div>
+        <div class="card">
+          <span class="icono">📅</span>
+          <h3>Citas y clientes</h3>
+          <p>Agenda y clientes organizados en un solo lugar.</p>
+        </div>
+        <div class="card">
+          <span class="icono">🛍️</span>
+          <h3>Catálogo en línea</h3>
+          <p>Muestra tus productos de forma atractiva.</p>
+        </div>
+        <div class="card">
+          <span class="icono">🧩</span>
+          <h3>A tu medida</h3>
+          <p>Funciona en computadora, celular o como programa instalable.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Habilidades Tecnicas</h2>
-    <p>React.js | TailwindCSS 
-      | Node.js | Express | Sequelize | SQL Server | MySQL
-      | Git avanzado | Csharp | Deploy en la nube (Railway)
-    </p>
-  </section>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="grid grid-2">
+        <article class="card proyecto">
+          <a class="media" href="imagenes/sistemaventas-pos.png" target="_blank" rel="noopener">
+            <img src="imagenes/sistemaventas-pos.png" alt="Pantalla de mesas del sistema de ventas y punto de venta" loading="lazy">
+          </a>
+          <h3>Sistema de Ventas y Punto de Venta (POS)</h3>
+          <p>
+            Pensado para restaurantes: controla mesas, pedidos a cocina, ventas y caja. El mesero toma
+            el pedido desde la app y llega a cocina sin papel ni confusiones. Genera facturas en PDF y
+            reportes por fecha. El dueño lo ve todo y el empleado solo lo necesario. Se instala como
+            programa en Windows.
+          </p>
+          <p class="tags"><span>Mesas</span><span>Pedidos</span><span>Ventas</span><span>Caja</span><span>Facturas PDF</span><span>Reportes</span></p>
+        </article>
+
+        <article class="card proyecto">
+          <a class="media" href="imagenes/makeupsis.png" target="_blank" rel="noopener">
+            <img src="imagenes/makeupsis.png" alt="Página principal de la tienda en línea MakeUpSis" loading="lazy">
+          </a>
+          <h3>MakeUpSis · Catálogo y tienda en línea</h3>
+          <p>
+            Catálogo de maquillaje y cuidado de la piel con categorías, buscador de productos, favoritos,
+            carrito, ofertas de temporada y modo oscuro. Incluye pasarela de pagos con Wompi y envíos
+            con Boxful, para que el cliente compre y reciba su pedido sin salir del sitio. Pensado para
+            que encuentren fácilmente lo que buscan desde el celular o la computadora.
+          </p>
+          <p class="tags"><span>Catálogo</span><span>Buscador</span><span>Carrito</span><span>Ofertas</span><span>Pagos con Wompi</span><span>Envíos con Boxful</span></p>
+          <p class="acciones"><a class="enlace-demo" href="https://makeupsis-demo.web.app/" target="_blank" rel="noopener">Ver demo en línea →</a></p>
+        </article>
+
+        <article class="card proyecto">
+          <video class="media" controls preload="metadata" playsinline>
+            <source src="imagenes/agendacitas.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <h3>Sistema de Gestión de Citas</h3>
+          <p>
+            Permite agendar y consultar citas sin llamadas ni apuntes en papel, manteniendo el
+            control de clientes y horarios. Mira el video para verlo en acción.
+          </p>
+          <p class="tags"><span>Agenda</span><span>Clientes</span></p>
+        </article>
+
+        <article class="card proyecto">
+          <a class="media" href="imagenes/sistemaInventario.png" target="_blank" rel="noopener">
+            <img src="imagenes/sistemaInventario.png" alt="Panel de administrador del sistema de inventario" loading="lazy">
+          </a>
+          <h3>Sistema de Inventario</h3>
+          <p>
+            Panel con el valor del inventario, unidades totales y productos por reponer. Gestiona
+            productos, proveedores, empleados y movimientos, con gráficas de entradas y ventas, estado
+            de salud del inventario y stock por vendedor.
+          </p>
+          <p class="tags"><span>Productos</span><span>Proveedores</span><span>Movimientos</span><span>Reportes</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <div class="linea">
+        <article>
+          <p class="fecha">Jun 2026 – Actualmente</p>
+          <h3>Consultora de Desarrollo de Software · MINSAL</h3>
+          <p>Consultoría en desarrollo de software para el Ministerio de Salud de El Salvador.</p>
+        </article>
+        <article>
+          <p class="fecha">Dic 2025 – Actualmente</p>
+          <h3>Desarrolladora de sistemas de gestión (proyectos independientes)</h3>
+          <p>Creación de sistemas de ventas, inventario, citas y catálogo para distintos negocios.</p>
+        </article>
+        <article>
+          <p class="fecha">2024</p>
+          <h3>Censista · Censo de Población y Vivienda 2024</h3>
+          <p>Participé en el proyecto estadístico más significativo en 17 años en El Salvador.</p>
+        </article>
+        <article>
+          <p class="fecha">2022 – 2025</p>
+          <h3>Desarrolladora de Aplicaciones de Escritorio · Alcaldía de Santa Ana</h3>
+          <p>Creé aplicaciones de escritorio que ayudaron a la alcaldía a organizar su trabajo diario.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="educacion">
+      <h2>Educación</h2>
+      <p><strong>Técnico en Ingeniería de Sistemas Informáticos</strong><br>
+        ITCA-FEPADE · Ene 2020 – Dic 2021</p>
+    </section>
+
+    <section id="certificaciones">
+      <h2>Certificaciones</h2>
+      <div class="certificado">
+        <a class="media" href="imagenes/certificado.png" target="_blank" rel="noopener">
+          <img src="imagenes/certificado.png" alt="Diploma del Programa de Capacitación de consultores del Sistema de Gestión Antisoborno del Ministerio de Salud" loading="lazy">
+        </a>
+        <div>
+          <h3>Capacitación de Consultores · Sistema de Gestión Antisoborno</h3>
+          <p>Ministerio de Salud (MINSAL) · Unidad de Cumplimiento</p>
+          <p class="fecha">23 de octubre de 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Herramientas con las que trabajo</h2>
+      <p class="tags">
+        <span>React</span><span>Node.js</span><span>MySQL</span><span>SQL Server</span>
+        <span>TailwindCSS</span><span>C#</span><span>Git</span><span>Electron</span><span>Railway (nube)</span>
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <button id="btnDescargar">Descargar CV</button>
+    <p>¿Tienes una idea o un negocio que quieres organizar?</p>
+    <p>
+      <a class="btn" href="mailto:michellequinta56@gmail.com">Hablemos</a>
+    </p>
   </footer>
-
-<!-- <script src="component.js"></script> -->
-
 </body>
 </html>
